@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="sistema  2 " company="" webLink="http://" view-date="2022-10-21" view-index="2" gantt-divider-location="366" resource-divider-location="300" version="3.2.3246" locale="es_ES">
+    <description/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="209" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="78" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="78" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <timeline>
+            <![CDATA[7]]>
+        </timeline>
+        <option id="color.recent">
+            <![CDATA[#000000 #ffff00 #ff3333 #ffff66 #f4f4f4 #00cccc #cc9900 #996600 #006699 #669900]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="2022" month="10" date="7" type="HOLIDAY" color="#00cccc"/>
+        <date year="2022" month="10" date="10" type="HOLIDAY" color="#f4f4f4">
+            <![CDATA[Día de la Diversidad Cultural]]>
+        </date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Compra, testeo del hardware" color="#ff3333" meeting="false" start="2022-08-29" duration="11" complete="0" thirdDate="2022-11-16" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" name="Modificacion del hardware" color="#009900" meeting="false" start="2022-09-13" duration="6" complete="0" thirdDate="2022-11-16" thirdDate-constraint="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" name="Primer prototipo" color="#3333ff" meeting="false" start="2022-09-21" duration="6" complete="0" thirdDate="2022-11-16" thirdDate-constraint="0" priority="2" expand="true"/>
+        <task id="3" name="Evaluacion primer Prototipo" color="#006699" meeting="false" start="2022-09-27" duration="4" complete="0" thirdDate="2022-09-21" thirdDate-constraint="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" name="Segundo Prototipo" color="#996600" meeting="false" start="2022-10-03" duration="5" complete="0" thirdDate="2022-09-27" thirdDate-constraint="0" expand="true"/>
+        <task id="5" name="Evaluacion segundo Prototipo" color="#cc9900" meeting="false" start="2022-10-05" duration="4" complete="0" thirdDate="2022-09-27" thirdDate-constraint="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" name="Implementación" color="#ff3333" shape="0,1,1,0,1,1,1,1,1,1,1,1,0,1,1,0" meeting="false" start="2022-10-13" duration="11" complete="0" thirdDate="2022-09-28" thirdDate-constraint="0" priority="4" expand="true"/>
+        <task id="8" name="Pruebas del sistema" color="#ffff00" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2022-10-21" duration="11" complete="0" thirdDate="2022-08-29" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="Implementacion del sistema" color="#000000" meeting="false" start="2022-11-07" duration="19" complete="0" thirdDate="2022-10-31" thirdDate-constraint="0" priority="4" expand="true">
+            <notes>
+                <![CDATA[Puede variar dependiendo fecha de entrega que dicte el profesor.]]>
+            </notes>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
